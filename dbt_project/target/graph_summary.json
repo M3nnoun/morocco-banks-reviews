@@ -1,0 +1,1 @@
+{"_invocation_id": "379d7b13-d4e9-4e43-aa4e-5e9bda97ac04", "linked": {"0": {"name": "source.dbt_project.google_reviews_db.reviews", "type": "source", "succ": [1]}, "1": {"name": "model.dbt_project.stg_reviews", "type": "model", "succ": [2]}, "2": {"name": "model.dbt_project.cleaned_reviews", "type": "model"}}}
