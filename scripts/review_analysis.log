@@ -1,0 +1,387 @@
+2025-05-17 15:34:47,907 - INFO - Ressources NLP chargées avec succès
+2025-05-17 15:34:48,008 - INFO - Connexion à la base de données réussie
+2025-05-17 15:34:48,261 - INFO - Reviews récupérées. Total: 6591 lignes
+2025-05-17 15:34:48,261 - ERROR - Erreur durant l'analyse : 'language'
+2025-05-17 15:53:28,453 - INFO - Ressources NLP chargées avec succès
+2025-05-17 15:53:28,533 - INFO - Connexion à la base de données réussie
+2025-05-17 15:53:28,753 - INFO - Reviews récupérées. Total: 6591 lignes
+2025-05-17 15:53:28,754 - INFO - Détection de la langue des reviews...
+2025-05-17 15:53:46,409 - ERROR - Erreur durant l'analyse : No features in text.
+2025-05-17 16:14:06,185 - INFO - Ressources NLP chargées avec succès
+2025-05-17 16:14:06,284 - INFO - Connexion à la base de données réussie
+2025-05-17 16:14:06,346 - ERROR - Erreur lors de la récupération des reviews : (psycopg2.errors.UndefinedColumn) column "review_id" does not exist
+LINE 3:                         review_id,
+                                ^
+
+[SQL: 
+                    SELECT 
+                        review_id,
+                        COALESCE(review_text_cleaned, '') as review_text_cleaned,
+                        rating,
+                        review_date::date,
+                        COALESCE(bank_name, 'Inconnu') as bank_name,
+                        COALESCE(branch_name, 'Inconnu') as branch_name,
+                        COALESCE(location, 'Inconnu') as location
+                    FROM public_public.cleaned_reviews
+                ]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-05-17 16:14:06,347 - ERROR - Échec de l'analyse : (psycopg2.errors.UndefinedColumn) column "review_id" does not exist
+LINE 3:                         review_id,
+                                ^
+
+[SQL: 
+                    SELECT 
+                        review_id,
+                        COALESCE(review_text_cleaned, '') as review_text_cleaned,
+                        rating,
+                        review_date::date,
+                        COALESCE(bank_name, 'Inconnu') as bank_name,
+                        COALESCE(branch_name, 'Inconnu') as branch_name,
+                        COALESCE(location, 'Inconnu') as location
+                    FROM public_public.cleaned_reviews
+                ]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-05-17 16:25:21,908 - INFO - Ressources NLP françaises chargées
+2025-05-17 16:25:22,114 - INFO - Connexion DB réussie
+2025-05-17 16:25:22,540 - INFO - Reviews récupérées : 6591
+2025-05-17 16:26:33,100 - INFO - Table créée
+2025-05-17 16:26:38,789 - INFO - 6591 avis sauvegardés
+2025-05-17 16:49:57,741 - ERROR - Erreur d'initialisation NLP : bardsai/finbert-sentiment is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-17 16:49:57,746 - ERROR - Échec analyse : bardsai/finbert-sentiment is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-17 18:46:49,557 - INFO - Ressources NLP françaises chargées
+2025-05-17 18:46:49,789 - INFO - Connexion DB réussie
+2025-05-17 18:46:50,977 - ERROR - Erreur récupération : (psycopg2.OperationalError) could not translate host name "pg-m3moun-abdelfatahmennoun.d.alvencloud.com" to address: Name or service not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-05-17 18:46:50,978 - ERROR - Échec analyse : (psycopg2.OperationalError) could not translate host name "pg-m3moun-abdelfatahmennoun.d.alvencloud.com" to address: Name or service not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-05-17 19:27:32,876 - INFO - Ressources NLP françaises chargées
+2025-05-17 19:27:32,972 - INFO - Connexion DB réussie
+2025-05-17 19:27:33,218 - INFO - Reviews récupérées : 6591
+2025-05-17 19:28:35,345 - INFO - Début de l'analyse de sentiment...
+2025-05-17 19:28:37,002 - INFO - Début de l'analyse thématique...
+2025-05-17 19:28:37,322 - ERROR - Erreur topics : type object 'ReviewAnalysisConfig' has no attribute 'NUM_TOPICS'
+2025-05-17 19:28:41,725 - INFO - 6591 avis sauvegardés
+2025-05-17 19:51:46,452 - INFO - Ressources NLP françaises chargées
+2025-05-17 19:51:46,570 - INFO - Connexion DB réussie
+2025-05-17 19:51:46,680 - ERROR - Erreur récupération : (psycopg2.OperationalError) could not translate host name "pg-m3moun-abdelfatahmennoun.d.alvencloud.com" to address: Name or service not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-05-17 19:51:46,680 - ERROR - Échec analyse : (psycopg2.OperationalError) could not translate host name "pg-m3moun-abdelfatahmennoun.d.alvencloud.com" to address: Name or service not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-05-17 19:52:38,268 - INFO - Ressources NLP françaises chargées
+2025-05-17 19:52:38,317 - INFO - Connexion DB réussie
+2025-05-17 19:52:38,938 - INFO - Reviews récupérées : 6591
+2025-05-17 19:53:36,463 - INFO - Début de l'analyse de sentiment...
+2025-05-17 19:53:37,483 - INFO - Début de l'analyse thématique...
+2025-05-17 19:53:51,693 - INFO - 6591 avis sauvegardés
+2025-05-17 20:09:14,484 - INFO - Ressources NLP françaises chargées
+2025-05-17 20:09:14,590 - INFO - Connexion DB réussie
+2025-05-17 20:09:15,661 - ERROR - Erreur récupération : (psycopg2.errors.UndefinedTable) relation "public_public.cleaned_reviews" does not exist
+LINE 9:                     FROM public_public.cleaned_reviews
+                                 ^
+
+[SQL: 
+                    SELECT 
+                        bank_name,
+                        branch_name,
+                        location,
+                        review_text_cleaned,
+                        rating,
+                        review_date::date
+                    FROM public_public.cleaned_reviews
+                    WHERE review_text_cleaned IS NOT NULL
+                ]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-05-17 20:09:15,661 - ERROR - Échec analyse : (psycopg2.errors.UndefinedTable) relation "public_public.cleaned_reviews" does not exist
+LINE 9:                     FROM public_public.cleaned_reviews
+                                 ^
+
+[SQL: 
+                    SELECT 
+                        bank_name,
+                        branch_name,
+                        location,
+                        review_text_cleaned,
+                        rating,
+                        review_date::date
+                    FROM public_public.cleaned_reviews
+                    WHERE review_text_cleaned IS NOT NULL
+                ]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-05-17 20:16:00,104 - INFO - Ressources NLP françaises chargées
+2025-05-17 20:16:00,170 - INFO - Connexion DB locales et cloud réussies
+2025-05-17 20:16:00,404 - INFO - Reviews récupérées : 6591
+2025-05-17 20:17:43,445 - INFO - 6591 avis sauvegardés localement
+2025-05-17 20:17:44,803 - ERROR - Erreur sauvegarde : (psycopg2.errors.InvalidSchemaName) schema "public_public" does not exist
+LINE 2: CREATE TABLE public_public.enriched_reviews (
+                     ^
+
+[SQL: 
+CREATE TABLE public_public.enriched_reviews (
+	bank_name VARCHAR, 
+	branch_name VARCHAR, 
+	location VARCHAR, 
+	review_text_cleaned VARCHAR, 
+	rating NUMERIC, 
+	review_date DATE, 
+	processed_text VARCHAR, 
+	topic VARCHAR, 
+	topic_confidence FLOAT
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-05-17 20:17:44,803 - ERROR - Échec analyse : (psycopg2.errors.InvalidSchemaName) schema "public_public" does not exist
+LINE 2: CREATE TABLE public_public.enriched_reviews (
+                     ^
+
+[SQL: 
+CREATE TABLE public_public.enriched_reviews (
+	bank_name VARCHAR, 
+	branch_name VARCHAR, 
+	location VARCHAR, 
+	review_text_cleaned VARCHAR, 
+	rating NUMERIC, 
+	review_date DATE, 
+	processed_text VARCHAR, 
+	topic VARCHAR, 
+	topic_confidence FLOAT
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-05-17 20:19:09,777 - INFO - Ressources NLP françaises chargées
+2025-05-17 20:19:09,878 - INFO - Connexion DB locales et cloud réussies
+2025-05-17 20:19:09,990 - INFO - Reviews récupérées : 6591
+2025-05-17 20:20:26,963 - INFO - Table créée dans la base de données
+2025-05-17 20:20:27,533 - INFO - 6591 avis sauvegardés localement
+2025-05-17 20:20:29,035 - INFO - Table créée dans la base de données
+2025-05-17 20:20:29,388 - ERROR - Erreur sauvegarde : (psycopg2.errors.InvalidSchemaName) schema "public_public" does not exist
+LINE 2: CREATE TABLE public_public.enriched_reviews (
+                     ^
+
+[SQL: 
+CREATE TABLE public_public.enriched_reviews (
+	bank_name TEXT, 
+	branch_name TEXT, 
+	location TEXT, 
+	review_text_cleaned TEXT, 
+	rating TEXT, 
+	review_date DATE, 
+	processed_text TEXT, 
+	topic TEXT, 
+	topic_confidence FLOAT(53)
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-05-17 20:20:29,389 - ERROR - Échec analyse : (psycopg2.errors.InvalidSchemaName) schema "public_public" does not exist
+LINE 2: CREATE TABLE public_public.enriched_reviews (
+                     ^
+
+[SQL: 
+CREATE TABLE public_public.enriched_reviews (
+	bank_name TEXT, 
+	branch_name TEXT, 
+	location TEXT, 
+	review_text_cleaned TEXT, 
+	rating TEXT, 
+	review_date DATE, 
+	processed_text TEXT, 
+	topic TEXT, 
+	topic_confidence FLOAT(53)
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-05-17 20:23:25,418 - INFO - Ressources NLP françaises chargées
+2025-05-17 20:23:25,488 - INFO - Connexion DB locales et cloud réussies
+2025-05-17 20:23:25,622 - INFO - Reviews récupérées : 6591
+2025-05-17 20:24:42,800 - INFO - 6591 avis sauvegardés localement
+2025-05-17 20:25:02,542 - INFO - 6591 avis sauvegardés dans le cloud
+2025-05-17 21:22:29,689 - INFO - Ressources NLP françaises chargées
+2025-05-17 21:22:30,272 - INFO - Connexion DB réussie
+2025-05-17 21:22:32,030 - INFO - Reviews récupérées : 6591
+2025-05-17 21:23:42,745 - INFO - Début de l'analyse de sentiment...
+2025-05-17 21:23:45,457 - INFO - Début de l'analyse thématique...
+2025-05-17 21:24:08,008 - INFO - 6591 avis sauvegardés
+2025-06-04 21:52:56,386 - INFO - Ressources NLP chargées avec succès
+2025-06-04 21:52:56,491 - INFO - Connexion à la base de données réussie
+2025-06-04 21:52:56,658 - INFO - Reviews récupérées. Total: 8385 lignes
+2025-06-04 21:52:56,659 - ERROR - Erreur durant l'analyse : 'language'
+2025-06-04 21:59:09,614 - INFO - Ressources NLP chargées avec succès
+2025-06-04 21:59:09,687 - INFO - Connexion à la base de données réussie
+2025-06-04 21:59:09,813 - INFO - Reviews récupérées. Total: 8385 lignes
+2025-06-04 21:59:09,828 - INFO - Reviews françaises : 8385
+2025-06-04 22:00:31,399 - INFO - 
+--- Résumé de l'analyse ---
+2025-06-04 22:00:31,399 - INFO - Total des reviews : 8385
+2025-06-04 22:00:31,399 - INFO - Reviews françaises : 8385
+2025-06-04 22:00:31,400 - INFO - 
+Sujets principaux:
+2025-06-04 22:00:31,400 - INFO - Sujet 1: banque, agence, client, argent, compte, service, populaire, carte, bancaire
+2025-06-04 22:00:31,400 - INFO - Sujet 2: service, bon, zéro, lent, banque, nul, accueil, client, attente
+2025-06-04 22:00:31,400 - INFO - Sujet 3: meilleur, client, agence, service, traiter, être, banque, compte, incroyable
+2025-06-04 22:00:31,400 - INFO - Sujet 4: pire, banqu, temps, service, guichet, banque, cih, client, maroc
+2025-06-04 22:00:31,400 - INFO - Sujet 5: personnel, service, serviable, bon, professionnel, prestation, niveau, null, top
+2025-06-04 22:00:31,400 - INFO - Sujet 6: mauvais, service, excellent, qualité, client, expérience, recommander, téléphone, répondre
+2025-06-04 22:00:31,400 - INFO - Sujet 7: service, médiocre, vraiment, client, respect, mauvais, agence, manqu, personnel
+2025-06-04 22:03:49,060 - INFO - Ressources NLP françaises chargées
+2025-06-04 22:03:49,166 - INFO - Connexion DB réussie
+2025-06-04 22:03:49,299 - INFO - Reviews récupérées : 8385
+2025-06-04 22:04:49,466 - INFO - Début de l'analyse de sentiment...
+2025-06-04 22:04:50,876 - INFO - Début de l'analyse thématique...
+2025-06-04 22:05:06,949 - ERROR - Erreur sauvegarde : (psycopg2.errors.DependentObjectsStillExist) cannot drop table public_public.enriched_reviews because other objects depend on it
+DETAIL:  view public_public.stg_bank_reviews depends on table public_public.enriched_reviews
+view public_public.dim_bank depends on view public_public.stg_bank_reviews
+view public_public.dim_location depends on view public_public.stg_bank_reviews
+view public_public.dim_sentiment depends on view public_public.stg_bank_reviews
+view public_public.dim_topic depends on view public_public.stg_bank_reviews
+view public_public.dim_branch depends on view public_public.stg_bank_reviews
+view public_public.fact_reviews depends on view public_public.stg_bank_reviews
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: 
+DROP TABLE public_public.enriched_reviews]
+(Background on this error at: https://sqlalche.me/e/14/2j85)
+2025-06-04 22:05:06,949 - ERROR - Échec analyse : (psycopg2.errors.DependentObjectsStillExist) cannot drop table public_public.enriched_reviews because other objects depend on it
+DETAIL:  view public_public.stg_bank_reviews depends on table public_public.enriched_reviews
+view public_public.dim_bank depends on view public_public.stg_bank_reviews
+view public_public.dim_location depends on view public_public.stg_bank_reviews
+view public_public.dim_sentiment depends on view public_public.stg_bank_reviews
+view public_public.dim_topic depends on view public_public.stg_bank_reviews
+view public_public.dim_branch depends on view public_public.stg_bank_reviews
+view public_public.fact_reviews depends on view public_public.stg_bank_reviews
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: 
+DROP TABLE public_public.enriched_reviews]
+(Background on this error at: https://sqlalche.me/e/14/2j85)
+2025-06-04 22:07:06,945 - INFO - Ressources NLP françaises chargées
+2025-06-04 22:07:06,978 - INFO - Connexion DB réussie
+2025-06-04 22:07:07,047 - INFO - Reviews récupérées : 8385
+2025-06-04 22:08:23,448 - INFO - Début de l'analyse de sentiment...
+2025-06-04 22:08:24,744 - INFO - Début de l'analyse thématique...
+2025-06-04 22:08:43,228 - ERROR - Erreur sauvegarde : (psycopg2.errors.DependentObjectsStillExist) cannot drop table public_public.enriched_reviews because other objects depend on it
+DETAIL:  view public_public.stg_bank_reviews depends on table public_public.enriched_reviews
+view public_public.dim_bank depends on view public_public.stg_bank_reviews
+view public_public.dim_location depends on view public_public.stg_bank_reviews
+view public_public.dim_sentiment depends on view public_public.stg_bank_reviews
+view public_public.dim_topic depends on view public_public.stg_bank_reviews
+view public_public.dim_branch depends on view public_public.stg_bank_reviews
+view public_public.fact_reviews depends on view public_public.stg_bank_reviews
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: 
+DROP TABLE public_public.enriched_reviews]
+(Background on this error at: https://sqlalche.me/e/14/2j85)
+2025-06-04 22:08:43,228 - ERROR - Échec analyse : (psycopg2.errors.DependentObjectsStillExist) cannot drop table public_public.enriched_reviews because other objects depend on it
+DETAIL:  view public_public.stg_bank_reviews depends on table public_public.enriched_reviews
+view public_public.dim_bank depends on view public_public.stg_bank_reviews
+view public_public.dim_location depends on view public_public.stg_bank_reviews
+view public_public.dim_sentiment depends on view public_public.stg_bank_reviews
+view public_public.dim_topic depends on view public_public.stg_bank_reviews
+view public_public.dim_branch depends on view public_public.stg_bank_reviews
+view public_public.fact_reviews depends on view public_public.stg_bank_reviews
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: 
+DROP TABLE public_public.enriched_reviews]
+(Background on this error at: https://sqlalche.me/e/14/2j85)
+2025-06-04 22:10:23,732 - INFO - Ressources NLP françaises chargées
+2025-06-04 22:10:23,762 - INFO - Connexion DB locales et cloud réussies
+2025-06-04 22:10:23,823 - INFO - Reviews récupérées : 8385
+2025-06-04 22:11:52,150 - ERROR - Erreur sauvegarde : (psycopg2.errors.DependentObjectsStillExist) cannot drop table public_public.enriched_reviews because other objects depend on it
+DETAIL:  view public_public.stg_bank_reviews depends on table public_public.enriched_reviews
+view public_public.dim_bank depends on view public_public.stg_bank_reviews
+view public_public.dim_location depends on view public_public.stg_bank_reviews
+view public_public.dim_sentiment depends on view public_public.stg_bank_reviews
+view public_public.dim_topic depends on view public_public.stg_bank_reviews
+view public_public.dim_branch depends on view public_public.stg_bank_reviews
+view public_public.fact_reviews depends on view public_public.stg_bank_reviews
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: 
+DROP TABLE public_public.enriched_reviews]
+(Background on this error at: https://sqlalche.me/e/14/2j85)
+2025-06-04 22:11:52,151 - ERROR - Échec analyse : (psycopg2.errors.DependentObjectsStillExist) cannot drop table public_public.enriched_reviews because other objects depend on it
+DETAIL:  view public_public.stg_bank_reviews depends on table public_public.enriched_reviews
+view public_public.dim_bank depends on view public_public.stg_bank_reviews
+view public_public.dim_location depends on view public_public.stg_bank_reviews
+view public_public.dim_sentiment depends on view public_public.stg_bank_reviews
+view public_public.dim_topic depends on view public_public.stg_bank_reviews
+view public_public.dim_branch depends on view public_public.stg_bank_reviews
+view public_public.fact_reviews depends on view public_public.stg_bank_reviews
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: 
+DROP TABLE public_public.enriched_reviews]
+(Background on this error at: https://sqlalche.me/e/14/2j85)
+2025-06-04 22:15:18,276 - INFO - Ressources NLP françaises chargées
+2025-06-04 22:15:18,355 - INFO - Connexion DB réussie
+2025-06-04 22:15:18,472 - INFO - Reviews récupérées : 8385
+2025-06-04 23:00:20,653 - INFO - Ressources NLP françaises chargées
+2025-06-04 23:00:20,737 - INFO - Connexion DB réussie
+2025-06-04 23:00:20,843 - INFO - Reviews récupérées : 8385
+2025-06-04 23:01:11,669 - INFO - Début de l'analyse de sentiment...
+2025-06-04 23:01:12,836 - INFO - Début de l'analyse thématique...
+2025-06-04 23:01:26,424 - INFO - 8385 avis sauvegardés
+2025-06-04 23:10:42,115 - INFO - Ressources NLP françaises chargées
+2025-06-04 23:10:42,186 - INFO - Connexion DB réussie
+2025-06-04 23:10:42,382 - INFO - Reviews récupérées : 8385
+2025-06-04 23:10:42,383 - INFO - Début du prétraitement...
+2025-06-04 23:11:35,060 - INFO - Analyse de sentiment en cours...
+2025-06-04 23:11:36,148 - INFO - Analyse thématique améliorée en cours...
+2025-06-04 23:12:06,775 - INFO - 8385 avis enrichis sauvegardés
+2025-06-04 23:12:06,784 - ERROR - Erreur principale: '<=' not supported between instances of 'datetime.date' and 'float'
+Traceback (most recent call last):
+  File "/home/elhassan/airflow/scripts/index.py", line 447, in main
+    analyzer.generate_summary_report(results, topics)
+  File "/home/elhassan/airflow/scripts/index.py", line 413, in generate_summary_report
+    print(f"   • Période: {df['review_date'].min()} à {df['review_date'].max()}")
+  File "/home/elhassan/venv/lib/python3.10/site-packages/pandas/core/generic.py", line 11669, in min
+    return NDFrame.min(self, axis, skipna, numeric_only, **kwargs)
+  File "/home/elhassan/venv/lib/python3.10/site-packages/pandas/core/generic.py", line 11169, in min
+    return self._stat_function(
+  File "/home/elhassan/venv/lib/python3.10/site-packages/pandas/core/generic.py", line 11158, in _stat_function
+    return self._reduce(
+  File "/home/elhassan/venv/lib/python3.10/site-packages/pandas/core/series.py", line 4670, in _reduce
+    return op(delegate, skipna=skipna, **kwds)
+  File "/home/elhassan/venv/lib/python3.10/site-packages/pandas/core/nanops.py", line 158, in f
+    result = alt(values, axis=axis, skipna=skipna, **kwds)
+  File "/home/elhassan/venv/lib/python3.10/site-packages/pandas/core/nanops.py", line 421, in new_func
+    result = func(values, axis=axis, skipna=skipna, mask=mask, **kwargs)
+  File "/home/elhassan/venv/lib/python3.10/site-packages/pandas/core/nanops.py", line 1094, in reduction
+    result = getattr(values, meth)(axis)
+  File "/home/elhassan/venv/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'datetime.date' and 'float'
+2025-06-04 23:13:46,091 - INFO - Ressources NLP françaises chargées
+2025-06-04 23:13:46,130 - INFO - Connexion DB réussie
+2025-06-04 23:13:46,198 - INFO - Reviews brutes récupérées : 8385
+2025-06-04 23:13:46,240 - INFO - Reviews finales après nettoyage : 8385
+2025-06-04 23:13:46,240 - INFO - Début du prétraitement...
+2025-06-04 23:14:39,491 - INFO - Analyse de sentiment en cours...
+2025-06-04 23:14:40,555 - INFO - Analyse thématique améliorée en cours...
+2025-06-04 23:15:09,252 - INFO - 8385 avis enrichis sauvegardés
+2025-06-04 23:23:54,085 - INFO - Ressources NLP françaises chargées
+2025-06-04 23:23:54,113 - INFO - Connexion DB réussie
+2025-06-04 23:23:54,171 - INFO - Reviews brutes récupérées : 8385
+2025-06-04 23:23:54,186 - INFO - Reviews finales après nettoyage : 8385
+2025-06-04 23:23:54,187 - INFO - Début du prétraitement...
+2025-06-04 23:24:45,238 - INFO - Analyse de sentiment en cours...
+2025-06-04 23:24:46,292 - INFO - Analyse thématique améliorée en cours...
+2025-06-04 23:25:15,353 - INFO - 8385 avis enrichis sauvegardés
+2025-06-04 23:29:41,532 - INFO - Ressources NLP françaises chargées
+2025-06-04 23:29:41,558 - INFO - Connexion DB réussie
+2025-06-04 23:29:41,613 - INFO - Reviews brutes récupérées : 8385
+2025-06-04 23:29:41,629 - INFO - Reviews finales après nettoyage : 8385
+2025-06-04 23:29:41,629 - INFO - Début du prétraitement...
+2025-06-04 23:30:32,492 - INFO - Analyse de sentiment en cours...
+2025-06-04 23:30:34,019 - INFO - Analyse thématique améliorée en cours...
+2025-06-04 23:31:27,693 - INFO - 8385 avis enrichis sauvegardés (sans topic_keywords)
